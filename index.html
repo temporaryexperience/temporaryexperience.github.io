@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>stamp_01</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <div id="background">
+        
+        <iframe src="/img/300ppi/FUNDOFINAL.mp3" allow="autoplay" loop="loop" style="display:none" id="iframeAudio">
+        </iframe>
+        <audio loop="loop" autoplay="autoplay">
+            <source src="/img/300ppi/FUNDOFINAL.mp3" type="audio/mp3" />
+        </audio>
+
+        <video id="videoBG" poster="poster.JPG" autoplay muted loop>
+            <source src="/img/300ppi/fundofinal.mp4" type="video/mp4">
+        </video>
+
+        <div id="col1">
+            <div id="wrapper1">
+                <div id="wrapper0">
+                    <p1 id="demo"></p1>
+                    <p2>until expiration</p2>
+                </div>
+                <img class="album-pic" src="img/300ppi/Asset8.svg">
+                <img class="album-pic-exit" src="img/300ppi/Asset10.svg">
+            </div>
+            <div id="wrapper2">
+                <audio id="audio" src="/img/300ppi/som1.2.mp3" autostart="false"></audio>
+                <button class="square1" onclick="PlaySound1()"> </button>
+            </div>
+        </div>
+        <div id="col2">
+            <div id="wrapper3">
+                <p class="marquee">
+                    <span>
+                        I REMEMBER THE FIRST AND LAST TIME I SAW YOUR EYES DANCE. THEY DRIFTED EVER SO CARELESSLY, UNTIL THEY FOUND MINE.
+                    </span>
+            </div>
+            <div id="wrapper4">
+                <img class="album-pic1" src="img/300ppi/Asset8.svg">
+                <img class="album-pic-exit1" src="img/300ppi/Asset11.svg">
+            </div>
+        </div>
+
+        <div id="col3">
+            <div id="wrapper5">
+                <audio id="audio1" src="/img/300ppi/som2.2.mp3" autostart="false"></audio>
+                <button class="square2" onclick="PlaySound()"> </button>
+            </div>
+            <div id="wrapper6">
+                <img class="album-pic3" src="img/300ppi/Asset8.svg">
+                <img class="album-pic-exit3" src="img/300ppi/Asset12.svg">
+            </div>
+
+        </div>
+
+        <div id="col4">
+            <div id="wrapper7">
+                <p class="marquee1">
+                    <span>
+                        AS THEY RESTED THERE LOCKED ON ME, I DIDN’T EVEN SENSED YOU HYPNOTISING ME. ALL I HAVE NOW ARE THESE MEMENTOS…
+                    </span>
+            </div>
+            <div id="wrapper8">
+                <img class="album-pic4" src="img/300ppi/Asset8.svg">
+                <img class="album-pic-exit4" src="img/300ppi/Asset13.svg">
+            </div>
+
+        </div>
+
+        <div id="col5">
+            <div id="wrapper9">
+                <img class="album-pic5" src="img/300ppi/Asset8.svg">
+                <img class="album-pic-exit5" src="img/300ppi/Asset14.svg">
+            </div>
+
+            <div id="wrapper10">
+                <audio id="audio2" src="/img/300ppi/som3.2.mp3" autostart="false"></audio>
+                <button class="square3" onclick="PlaySound2()"> </button>
+            </div>
+
+            <div id="wrapper11">
+                <img class="album-pic6" src="img/300ppi/Asset8.svg">
+                <img class="album-pic-exit6" src="img/300ppi/Asset15.svg">
+            </div>
+        </div>
+    </div>
+    <script>
+        function PlaySound1() {
+            var sound = document.getElementById("audio");
+            sound.play()
+        }
+
+        function PlaySound() {
+            var sound = document.getElementById("audio1");
+            sound.play()
+        }
+
+        function PlaySound2() {
+            var sound = document.getElementById("audio2");
+            sound.play()
+        }
+
+        // Set the date we're counting down to
+        var countDownDate = new Date("June 14, 2020 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+    </script>
+
+</body>
+
+</html>

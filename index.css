@@ -1,0 +1,475 @@
+@font-face {
+    font-family: 'woodland';
+    src: url('../ppwoodland-ultralight-webfont.woff2') format('woff2'),
+        url('../ppwoodland-ultralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#videoBG {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;
+}
+ 
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+
+#background {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100vh;
+    width: 180%;
+}
+
+
+#col1 {
+    margin: 0.2%;
+    display: flex;
+    flex-direction: row;
+    width: 16%;
+}
+
+
+
+
+#wrapper1 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper0 {
+    height: 90%;
+    padding-right: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+p1 {
+  text-align: center;
+  font-size: 2.3vh;
+  font-family: woodland;
+    color: white;
+    opacity: 55%;
+   
+}
+
+p2 {
+  text-align: center;
+  font-size: 2.3vh;
+  font-family: woodland;
+    color: white;
+    opacity: 55%;
+}
+
+.album-pic {
+    width: 50%;
+    margin-bottom: 170%;
+}
+
+.album-pic-exit {
+    margin-top: 0%;
+    display: none;
+    position: absolute;
+}
+
+.album-pic:hover + .album-pic-exit {
+    display: block;
+    width: 15%;
+    opacity: 1;
+    animation: fade 1s linear;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+#wrapper2 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.square1 {
+    background-color: black;
+    border: none;
+    padding: 10%;
+    margin-bottom: -270%;
+    margin-right: 80%;
+    transition: all 0.2s ease-in-out;
+}
+
+.square1:hover {
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 100);
+}
+
+#col2 {
+    display: flex;
+    flex-direction: column;
+    width: 17.7%;
+    margin: 0.2%;
+
+}
+
+
+#wrapper3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
+.marquee {
+    width: 135%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: black;
+    font-size: 2em;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    color: white;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-family: woodland;
+    animation: marquee 35s linear infinite;
+}
+
+.marquee span:hover {
+    animation-play-state: paused
+}
+
+
+/* Make it move */
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+#wrapper4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.album-pic1 {
+    width: 25%;
+}
+
+.album-pic-exit1 {
+    display: none;
+    margin-top: -7%;
+    position: absolute;
+}
+
+.album-pic1:hover + .album-pic-exit1 {
+    display: block;
+    width: 24%;
+    animation: fade 1s linear;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+
+#col3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 20.7%;
+    margin: 0.2%;
+}
+
+#wrapper5 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.square2 {
+    background-color: black;
+    border: none;
+    padding: 8%;
+    margin-top: 85%;
+    margin-right: 200%;
+    transition: all 0.2s ease-in-out;
+}
+
+.square2:hover {
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 100);
+}
+
+#wrapper6 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 75%;
+}
+
+.album-pic3 {
+    width: 35%;
+}
+
+.album-pic-exit3 {
+    display: none;
+    margin-top: -10.2%;
+    position: absolute;
+}
+
+.album-pic3:hover + .album-pic-exit3 {
+    display: block;
+    width: 21%;
+    animation: fade 1s linear;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+#col4 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 19.7%;
+    margin: 0.2%;
+}
+
+#wrapper7 {
+    width: 130%;
+    display: flex;
+}
+
+.marquee1 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: black;
+    font-size: 2em;
+}
+
+.marquee1 span {
+    display: inline-block;
+    padding-left: 100%;
+    color: white;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-family: woodland;
+    animation: marquee 35s linear infinite;
+}
+
+.marquee1 span:hover {
+    animation-play-state: paused
+}
+
+
+/* Make it move */
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+#wrapper8 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 100%;
+
+}
+
+.album-pic4 {
+    width: 22%;
+}
+
+.album-pic-exit4 {
+    display: none;
+    margin-top: 9.3%;
+    position: absolute;
+}
+
+.album-pic4:hover + .album-pic-exit4 {
+    display: block;
+    width: 15%;
+    animation: fade 1s linear;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+
+
+
+#col5 {
+    display: flex;
+    flex-direction: row;
+    width: 21%;
+    margin: 0.2%;
+}
+
+
+#wrapper9 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 35%;
+    margin-left: 5%;
+    align-items: center;
+
+}
+
+.album-pic5 {
+    width: 50%;
+}
+
+.album-pic-exit5 {
+    display: none;
+    margin-top: -7%;
+    position: absolute;
+}
+
+.album-pic5:hover + .album-pic-exit5 {
+    display: block;
+    width: 24%;
+    animation: fade 1s linear;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+#wrapper10 {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.square3 {
+    background-color: black;
+    border: none;
+    padding: 8%;
+    margin-bottom: 40%;
+    margin-left: 60%;
+    transition: all 0.2s ease-in-out;
+}
+
+.square3:hover {
+    box-shadow: 0px 0px 25px rgb(0, 0, 0, 100);
+}
+
+#wrapper11 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 18%;
+    align-items: center;
+    margin-right: 3%
+}
+
+.album-pic6 {
+    width: 155%;
+}
+
+.album-pic-exit6 {
+    display: none;
+    margin-top: 6.5%;
+    position: absolute;
+}
+
+.album-pic6:hover + .album-pic-exit6 {
+    display: block;
+    width: 16%;
+    animation: fade 1s linear;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
