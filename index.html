@@ -13,11 +13,17 @@
 
     <div id="background">
         
+        
+        
         <iframe src="/img/300ppi/FUNDOFINAL.mp3" allow="autoplay" loop="loop" style="display:none" id="iframeAudio">
         </iframe>
-        <audio loop="loop" autoplay="autoplay">
-            <source src="/img/300ppi/FUNDOFINAL.mp3" type="audio/mp3" />
+        
+        <audio loop="loop" controls style="display:none" id="audio">
+            <source src="/img/300ppi/FUNDOFINAL.mp3" type="audio/mp3"/>
         </audio>
+        
+        
+        
 
         <video id="videoBG" poster="poster.JPG" autoplay muted loop>
             <source src="/img/300ppi/fundofinal.mp4" type="video/mp4">
@@ -94,6 +100,9 @@
         </div>
     </div>
     <script>
+        
+        document.getElementById('audio').play();
+        
         function PlaySound1() {
             var sound = document.getElementById("audio");
             sound.play()

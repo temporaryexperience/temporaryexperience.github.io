@@ -41,8 +41,6 @@ body {
 }
 
 
-
-
 #wrapper1 {
     width: 60%;
     height: 100%;
@@ -63,8 +61,8 @@ p1 {
   text-align: center;
   font-size: 2.3vh;
   font-family: woodland;
-    color: white;
-    opacity: 55%;
+  color: white;
+  opacity: 55%;
    
 }
 
@@ -334,11 +332,11 @@ p2 {
 
 #wrapper8 {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 100%;
 
 }
 
@@ -348,7 +346,7 @@ p2 {
 
 .album-pic-exit4 {
     display: none;
-    margin-top: 9.3%;
+    margin-top: 6.6%;
     position: absolute;
 }
 
@@ -454,7 +452,7 @@ p2 {
 
 .album-pic-exit6 {
     display: none;
-    margin-top: 6.5%;
+    margin-top: 6.3%;
     position: absolute;
 }
 
