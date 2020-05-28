@@ -124,7 +124,7 @@ p2 {
 .square1 {
     background-color: black;
     border: none;
-    padding: 10%;
+    padding: 11%;
     margin-bottom: 85%;
     transition: all 0.2s ease-in-out;
 }
