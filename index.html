@@ -13,17 +13,18 @@
 
     <div id="background">
         
-        
-    
-        <audio loop="loop" controls style="display:none" id="audio">
-            <source src="/img/300ppi/FUNDOFINAL.mp3" type="audio/mp3"/>
-        </audio>
+        <iframe src="img/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
+
         
         
+    <audio id="player" autoplay loop>
+    <source src="img/SOMFINAL.mp3">
+</audio>
+
         
 
         <video id="videoBG" poster="poster.JPG" autoplay muted loop>
-            <source src="/img/300ppi/fundofinal.mp4" type="video/mp4">
+            <source src="/img/fundofinal.mp4" type="video/mp4">
         </video>
 
         <div id="col1">
@@ -98,23 +99,6 @@
     </div>
     <script>
         
-        document.getElementById('audio').play();
-        
-        function PlaySound1() {
-            var sound = document.getElementById("audio");
-            sound.play()
-        }
-
-        function PlaySound() {
-            var sound = document.getElementById("audio1");
-            sound.play()
-        }
-
-        function PlaySound2() {
-            var sound = document.getElementById("audio2");
-            sound.play()
-        }
-
         // Set the date we're counting down to
         var countDownDate = new Date("June 14, 2020 00:00:00").getTime();
 
@@ -143,6 +127,24 @@
                 document.getElementById("demo").innerHTML = "EXPIRED";
             }
         }, 1000);
+        
+        
+        function PlaySound1() {
+            var sound = document.getElementById("audio");
+            sound.play()
+        }
+
+        function PlaySound() {
+            var sound = document.getElementById("audio1");
+            sound.play()
+        }
+
+        function PlaySound2() {
+            var sound = document.getElementById("audio2");
+            sound.play()
+        }
+
+        
 
     </script>
 
