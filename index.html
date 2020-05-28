@@ -13,13 +13,11 @@
 
     <div id="background">
         
-        <iframe src="img/silence.mp3" allow="autoplay" id="audio" style="display: none"></iframe>
-
         
         
     <audio id="player" autoplay loop>
     <source src="img/SOMFINAL.mp3">
-</audio>
+    </audio>
 
         
 
@@ -33,9 +31,10 @@
                     <p1 id="demo"></p1>
                     <p2>until expiration</p2>
                 </div>
+                <div id="wrapper01">
                 <img class="album-pic" src="img/300ppi/Asset8.svg">
                 <img class="album-pic-exit" src="img/300ppi/Asset10.svg">
-            </div>
+                  </div>  </div>
             <div id="wrapper2">
                 <audio id="audio" src="/img/300ppi/som1.2.mp3" autostart="false"></audio>
                 <button class="square1" onclick="PlaySound1()"> </button>
@@ -98,6 +97,12 @@
         </div>
     </div>
     <script>
+        
+        document.addEventListener('click', musicPlay);
+function musicPlay() {
+    document.getElementById('player').play();
+    document.removeEventListener('click', musicPlay);
+};
         
         // Set the date we're counting down to
         var countDownDate = new Date("June 14, 2020 00:00:00").getTime();
