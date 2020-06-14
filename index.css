@@ -134,16 +134,19 @@ p2 {
 }
 
 .album-pic-exit {
-    display: none;
+    display:none;
+    height: 40%;
     position: absolute;
 }
 
 .album-pic:hover + .album-pic-exit {
     display: block;
+     height: 40%;
     animation: fade 2s linear;
 }
 .album-pic-exit:hover {
     display: block;
+     height: 40%;
     animation: fade 2s linear;
 }
 
@@ -253,15 +256,18 @@ p2 {
 
 .album-pic-exit1 {
     display: none;
+    height: 46%;
     position: absolute;
 }
 
 .album-pic1:hover + .album-pic-exit1 {
     display: block;
+     height: 46%;
     animation: fade 2s linear;
 }
 .album-pic-exit1:hover {
     display: block;
+     height: 46%;
     animation: fade 2s linear;
 }
 
@@ -339,15 +345,18 @@ p2 {
 
 .album-pic-exit2 {
     display: none;
+     height: 57%;
     position: absolute;
 }
 
 .album-pic2:hover + .album-pic-exit2 {
     display: block;
+    height: 57%;
     animation: fade 2s linear;
 }
 .album-pic-exit2:hover {
     display: block;
+    height: 57%;
     animation: fade 2s linear;
 }
 
@@ -440,6 +449,7 @@ p2 {
 
 .album-pic-exit3 {
     display: none;
+    height: 47%;
     position: absolute;
     padding-right: 2%;
     padding-bottom: 0.5%;
@@ -447,12 +457,14 @@ p2 {
 
 .album-pic3:hover + .album-pic-exit3{
     display: block;
+    height: 47%;
     padding-right: 2%;
     padding-bottom: 0.5%;
     animation: fade 2s linear;
 }
 .album-pic-exit3:hover {
     display: block;
+    height: 47%;
     padding-right: 2%;
     padding-bottom: 0.5%;
     animation: fade 2s linear;
