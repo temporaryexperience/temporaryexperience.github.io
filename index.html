@@ -2,122 +2,123 @@
 <html>
 
 <head>
-    <title>stamp_03</title>
+    <title>Anachronic Stamp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=divice-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <link rel="icon" href="/img/Ficheiros/1.1.png">
+    <link rel="icon" href="/img/8-01.png">
 
 </head>
+
 
 <body>
 
     <div id="background">
         <audio id="player" autoplay loop>
-            <source src="img/Audio_fundo.mp3">
+            <source src="som_fundo.mp3">
         </audio>
 
 
         <video id="videoBG" poster="poster.JPG" autoplay muted loop>
-            <source src="/img/Video_fase3.mp4" type="video/mp4">
+            <source src="Video_fundo.mp4" type="video/mp4">
         </video>
 
-
         <div id="col1">
-            <div id="wrapperA">
+            <div id="wrapper1">
                 <p1 id="demo"></p1>
                 <p2>until expiration</p2>
             </div>
-            <div class="wrapper1">
-                <div class="imagem"> <img src="img/Ficheiros/5.png"></div>
-            </div>
-            <div class="wrapper2">
-                <div class="imagem2"> <img src="img/Ficheiros/2.png"></div>
-            </div>
+            <div id="wrapper2">
+                <img class=img1 src="img/3-01.png"></div>
+            <div id="wrapper3">
+                <img class=img2 src="img/1.png"></div>
+
         </div>
         <div id="col2">
-            <div class="wrapper3">
-                <div class="imagem3"> <img src="img/Ficheiros/1.png"></div>
+            <div id="wrapper4">
+                <img id="text1" src="img/text1.svg">
+                <audio id="audio1" src="/img/som1.mp3" autostart="false"></audio>
+                <button id="square1" onclick="PlaySound1();hide1()"></button></div>
+            <div id="wrapper5">
+                <audio id="audio2" src="img/destroy.mp3" autostart="false"></audio>
+                <button id="square2" onclick="PlaySound2();disappear1()"> </button></div>
+
+            <div id="wrapper6">
+                <div id="wrapper7">
+                    <audio id="audio3" src="img/destroy.mp3" autostart="false"></audio>
+                    <button id="square3" onclick="PlaySound3();disappear2()"> </button></div>
+                <div id="wrapper8">
+                    <p class="marquee">
+                        <span>
+                            A CRACK HAS JUST CAST ITS SHADOWS OVER THE ENTIRE TIME SPAN 
+                        </span>
+                </div>
             </div>
         </div>
         <div id="col3">
-            <div class="wrapper4">
-                <div class="imagem4"> <img src="img/Ficheiros/2.png"></div>
-            </div>
-            <div class="wrapper5">
-                <div class="video1"><video width="528" height="297" controls loop>
-                        <source src="/img/Video1_novo.mp4" type="video/mp4">
-                    </video>
-                    <p1> THINGS ARE DEFINITELY <br> NOT WHAT THEY ONCE WERE.</p1>
-                </div>
-            </div>
-            <div class="wrapper6">
-                <p class="marquee">
-                    <span>
-                        LIKE THE EARTH, MEMORY HAS LAYERS
-                    </span>
-            </div>
+            <div id="wrapper9">
+                <audio id="audio4" src="img/destroy.mp3" autostart="false"></audio>
+                <button id="square4" onclick="PlaySound4();disappear3()"> </button></div>
+            <div id="wrapper10"><img class=img3 src="img/2copy.png"></div>
         </div>
         <div id="col4">
-            <div class="wrapper7">
-                <div class="imagem5"> <img src="img/Ficheiros/4.1.png"> </div>
-            </div>
-
-            <div class="wrapper8">
-                <div class="imagem6"> <img src="img/Ficheiros/1.2.png"></div>
-            </div>
-
-            <div class="wrapper9">
-                <div class="imagem7"> <img src="img/Ficheiros/3.png"></div>
+            <div id="wrapper11">
+                <img class=img4 src="img/5copy.png"></div>
+            <div id="wrapper12">
+                <audio id="audio5" src="img/destroy.mp3" autostart="false"></audio>
+                <button id="square5" onclick="PlaySound5();disappear4()"> </button></div>
+            <div id="wrapper13"> 
+                <audio id="audio6" src="img/som2.mp3" autostart="false"></audio>
+                <button id="square6" onclick="PlaySound6();hide2()"></button>
+                <img id="text2" src="img/text2.svg">
             </div>
         </div>
         <div id="col5">
-            <div class="wrapper10">
-                <div class="wrapper0">
-                    <p2 class="texto1"> I WILL IMPROVE MY COLLECTION <br> UNTIL IT IS FLAWLESS.</p2>
-                </div>
-                <div class="wrapper01">
-                    <div class="imagem8"> <img src="img/Ficheiros/8.png"></div>
-                </div>
-            </div>
-            <div class="wrapper11">
-                <p class="marquee2">
-                    <span>
-                        I WILL NOT STOP UNTIL I PUT MY SOUL AT EASE
-                    </span>
-            </div>
-            <div class="wrapper12">
-                <div class="imagem9"> <img src="img/Ficheiros/2.png"></div>
-            </div>
-             <div class="wrapper13">
-                <div class="video2"><video width="450" height="253.13" controls loop>
-                        <source src="/img/Video2_novo.mp4" type="video/mp4">
-                    </video>
-                 </div>
-                 <div class="wrapperB"> <p3 class="text2"> THAT IS, I AM SURE, <br>WHAT WILL SET ME FREE.</p3></div>
-            </div>
+            <div id="wrapper14">
+                <audio id="audio7" src="img/destroy.mp3" autostart="false"></audio>
+                <button id="square7" onclick="PlaySound7();disappear5()"></button></div>
+            <div id="wrapper15">
+                <img class=img5 src="img/6.png"></div>
+            <div id="wrapper16">
+                <audio id="audio8" src="img/destroy.mp3" autostart="false"></audio>
+                <button id="square8" onclick="PlaySound8();disappear6()"></button></div>
+            <div id="wrapper17">
+            <img class=img6 src="img/4_2.png"></div>
         </div>
         <div id="col6">
-            <div class="wrapper14">
-            <div class="wrapper15">
-                 <div class="imagem10"> <img src="img/Ficheiros/10.png"></div>
-                </div>
-            <div class="wrapper16">
-                <div class="imagem11"> <img src="img/Ficheiros/9.png">
-                </div>
-                </div>
-                </div>
-                <div class="wrapper17">
-                    <div class="wrapper18">
-                <div class="imagem12"> <img src="img/Ficheiros/6.png"></div>
-                </div>
-                </div>                
-            
-            
-
+            <div id="wrapper18">
+                <audio id="audio9" src="img/destroy.mp3" autostart="false"></audio>
+                <button id="square9" onclick="PlaySound9();disappear7()"></button></div>
         </div>
-       
+        <div id="col7">
+            <div id="wrapper19"><img class=img7 src="img/7.png"></div>
+            <div id="wrapper20">
+                <audio id="audio10" src="img/som3.mp3" autostart="false"></audio>
+                <button id="square10" onclick="PlaySound10();hide3()"></button>
+            <img id="text3" src="img/text3.svg"></div>
+        </div>
+        <div id="col8">
+            <div id="wrapper21">
+                <p class="marquee2">
+                        <span>
+                            I MUST HAVE PEACE AT LAST — I WILL HAVE PEACE AT LAST
+                        </span>
+            </div>
+            <div id="wrapper22">
+                <audio id="audio11" src="img/destroy.mp3" autostart="false"></audio>
+                <button id="square11" onclick="PlaySound11();disappear8()"></button></div>
+            <div id="wrapper23"></div>
+        </div>
+        <div id="col9">
+            <div id="wrapper24">
+                <audio id="audio12" src="img/destroy.mp3" autostart="false"></audio>
+                <button id="square12" onclick="PlaySound12();disappear9()"></button></div>
+            <div id="wrapper25">
+                <audio id="audio13" src="img/destroy.mp3" autostart="false"></audio>
+                <button id="square13" onclick="PlaySound13();disappear10()"></button></div>
+            <div id="wrapper26"><img class=img8 src="img/8-01.png"></div>
+        </div>
         <script>
             document.addEventListener('click', musicPlay);
 
@@ -126,8 +127,127 @@
                 document.removeEventListener('click', musicPlay);
             };
 
+
+            function PlaySound1() {
+                var sound = document.getElementById("audio1");
+                sound.play()
+            };
+
+            function hide1() {
+                document.getElementById('text1').style.opacity = '0';
+            };
+
+            function PlaySound2() {
+                var sound = document.getElementById("audio2");
+                sound.play()
+            };
+
+            function disappear1() {
+                document.getElementById('square2').style.visibility = "hidden";
+            };
+
+            function PlaySound3() {
+                var sound = document.getElementById("audio3");
+                sound.play()
+            };
+
+            function disappear2() {
+                document.getElementById('square3').style.visibility = "hidden";
+            };
+
+            function PlaySound4() {
+                var sound = document.getElementById("audio4");
+                sound.play()
+            };
+
+            function disappear3() {
+                document.getElementById('square4').style.visibility = "hidden";
+            };
+            
+            function PlaySound5() {
+                var sound = document.getElementById("audio5");
+                sound.play()
+            };
+
+            function disappear4() {
+                document.getElementById('square5').style.visibility = "hidden";
+            };
+            
+            function PlaySound6() {
+                var sound = document.getElementById("audio6");
+                sound.play()
+            };
+
+            function hide2() {
+                document.getElementById('text2').style.opacity = '0';
+            };
+            
+            function PlaySound7() {
+                var sound = document.getElementById("audio7");
+                sound.play()
+            };
+
+            function disappear5() {
+                document.getElementById('square7').style.visibility = "hidden";
+            };
+            
+             function PlaySound8() {
+                var sound = document.getElementById("audio8");
+                sound.play()
+            };
+
+            function disappear6() {
+                document.getElementById('square8').style.visibility = "hidden";
+            };
+            
+             function PlaySound9() {
+                var sound = document.getElementById("audio9");
+                sound.play()
+            };
+
+            function disappear7() {
+                document.getElementById('square9').style.visibility = "hidden";
+            };
+            
+            function PlaySound10() {
+                var sound = document.getElementById("audio10");
+                sound.play()
+            };
+
+            function hide3() {
+                document.getElementById('text3').style.opacity = '0';
+            };
+            
+             function PlaySound11() {
+                var sound = document.getElementById("audio11");
+                sound.play()
+            };
+
+            function disappear8() {
+                document.getElementById('square11').style.visibility = "hidden";
+            };
+            
+             function PlaySound12() {
+                var sound = document.getElementById("audio12");
+                sound.play()
+            };
+
+            function disappear9() {
+                document.getElementById('square12').style.visibility = "hidden";
+            };
+            
+            function PlaySound13() {
+                var sound = document.getElementById("audio13");
+                sound.play()
+            };
+
+            function disappear10() {
+                document.getElementById('square13').style.visibility = "hidden";
+            };
+
+
             // Set the date we're counting down to
-            var countDownDate = new Date("July 3, 2020 00:00:00").getTime();
+            var countDownDate = new Date("July 15, 2020 00:00:00").getTime();
 
             // Update the count down every 1 second
             var x = setInterval(function() {
@@ -155,64 +275,43 @@
                 }
             }, 1000);
 
-            $('.wrapper1').hover(function() {
-                $('.imagem').addClass('show')
-            })
+            $('.img1').hover(function() {
+                $(this).fadeOut(2500);
+            });
 
-            $('.wrapper2').hover(function() {
-                $('.imagem2').addClass('show2')
-            })
-            $('.wrapper3').hover(function() {
-                $('.imagem3').addClass('show3')
-            })
-            $('.wrapper4').hover(function() {
-                $('.imagem4').addClass('show4')
-            })
+            $('.img2').hover(function() {
+                $(this).fadeOut(2500);
+            });
 
-            $('.wrapper5').hover(function() {
-                $('.video1').addClass('showvideo1')
-            })
+            $('.img3').hover(function() {
+                $(this).fadeOut(2500);
+            });
 
-            $('.wrapper7').hover(function() {
-                $('.imagem5').addClass('show5')
-            })
-
-            $('.wrapper8').hover(function() {
-                $('.imagem6').addClass('show6')
-            })
-
-            $('.wrapper9').hover(function() {
-                $('.imagem7').addClass('show7')
-            })
-
-            $('.wrapper01').hover(function() {
-                $('.imagem8').addClass('show8')
-            })
-
-            $('.wrapper0').hover(function() {
-                $('.texto1').addClass('show9')
-            })
+            $('.img4').hover(function() {
+                $(this).fadeOut(2500);
+            });
             
-              $('.wrapper12').hover(function() {
-                $('.imagem9').addClass('show9')
-            })
+            $('.img5').hover(function() {
+                $(this).fadeOut(2500);
+            });
             
-             $('.wrapper13').hover(function() {
-                $('.video2').addClass('showvideo2')
-                 $('.text2').addClass('showtext2')
-            })
+            $('.img6').hover(function() {
+                $(this).fadeOut(2500);
+            });
             
-             $('.wrapper15').hover(function() {
-                $('.imagem10').addClass('show10')
-            })
-             $('.wrapper16').hover(function() {
-                $('.imagem11').addClass('show11')
-            })
+            $('.img7').hover(function() {
+                $(this).fadeOut(2500);
+            });
             
-             $('.wrapper18').hover(function() {
-                $('.imagem12').addClass('show12')
-            })
-
+            $('.img8').hover(function() {
+                $(this).fadeOut(2500);
+            });
+            
         </script>
+
     </div>
+
 </body>
+
+
+</html>
